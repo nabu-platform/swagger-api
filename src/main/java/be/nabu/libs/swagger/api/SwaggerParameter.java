@@ -78,7 +78,7 @@ public interface SwaggerParameter {
 		STRING,
 		// base64 encoded characters
 		BYTE,
-		// actual fucking binary
+		// actual binary
 		BINARY,
 		DATE,
 		DATE_TIME,
