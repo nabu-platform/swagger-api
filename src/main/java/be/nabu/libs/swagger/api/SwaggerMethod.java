@@ -1,6 +1,7 @@
 package be.nabu.libs.swagger.api;
 
 import java.util.List;
+import java.util.Map;
 
 public interface SwaggerMethod {
 	public String getMethod();
@@ -16,4 +17,5 @@ public interface SwaggerMethod {
 	public Boolean getDeprecated();
 	public List<SwaggerResponse> getResponses();
 	public List<SwaggerSecuritySetting> getSecurity();
+	public Map<String, Object> getExtensions();
 }
