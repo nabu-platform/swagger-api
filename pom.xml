@@ -31,5 +31,9 @@
 			<groupId>be.nabu.libs.types</groupId>
 			<artifactId>types-api</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>be.nabu.libs.types</groupId>
+			<artifactId>types-base</artifactId>
+		</dependency>
 	</dependencies>
 </project>

@@ -1,6 +1,7 @@
 package be.nabu.libs.swagger.api;
 
 import be.nabu.libs.types.api.Element;
+import be.nabu.libs.types.base.CollectionFormat;
 
 public interface SwaggerParameter {
 	
@@ -14,27 +15,6 @@ public interface SwaggerParameter {
 	public CollectionFormat getCollectionFormat();
 	
 	public Element<?> getElement();
-	
-	public enum CollectionFormat {
-		CSV(','),
-		SSV(' '),
-		TSV('\t'),
-		PIPES('|'),
-		MULTI('&')
-		;
-		private char character;
-
-		private CollectionFormat(char character) {
-			this.character = character;
-		}
-		public char getCharacter() {
-			return character;
-		}
-		@Override
-		public String toString() {
-			return super.toString().toLowerCase();
-		}
-	}
 	
 	public enum ParameterLocation {
 		BODY,
