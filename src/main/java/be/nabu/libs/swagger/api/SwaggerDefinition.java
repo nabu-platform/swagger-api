@@ -28,4 +28,6 @@ public interface SwaggerDefinition extends Artifact {
 	public TypeRegistry getRegistry();
 	// security definitions for this swagger file
 	public List<SwaggerSecurityDefinition> getSecurityDefinitions();
+	// get the global security definitions
+	public List<SwaggerSecuritySetting> getGlobalSecurity();
 }
