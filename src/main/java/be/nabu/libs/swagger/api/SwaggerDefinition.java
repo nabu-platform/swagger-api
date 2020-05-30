@@ -8,6 +8,8 @@ import be.nabu.libs.types.api.TypeRegistry;
 // https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md
 // example: https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v2.0/json/petstore.json
 public interface SwaggerDefinition extends Artifact {
+	// returns "swagger" or "openapi" or...
+	public String getDefinitionType();
 	// the version of swagger you are using
 	public String getVersion();
 	// metadata about the api

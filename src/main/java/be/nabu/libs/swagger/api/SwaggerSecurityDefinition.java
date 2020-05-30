@@ -28,7 +28,8 @@ public interface SwaggerSecurityDefinition {
 	public enum SecurityType {
 		basic,
 		apiKey,
-		oauth2
+		oauth2,
+		bearer
 	}
 	
 	public enum OAuth2Flow {
