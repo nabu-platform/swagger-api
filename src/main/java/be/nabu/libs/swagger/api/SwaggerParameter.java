@@ -16,6 +16,15 @@ public interface SwaggerParameter {
 	
 	public Element<?> getElement();
 	
+	@Version(major = 3)
+	public boolean isExplode();
+	
+	@Version(major = 3)
+	public boolean isAllowReserved();
+	
+	@Version(major = 3)
+	public String getDescription();
+	
 	public enum ParameterLocation {
 		BODY,
 		QUERY,

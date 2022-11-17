@@ -9,4 +9,7 @@ public interface SwaggerResponse {
 	public String getDescription();
 	public Element<?> getElement();
 	public List<SwaggerParameter> getHeaders();
+	
+	@Version(major = 3)
+	public List<String> getProduces();
 }
