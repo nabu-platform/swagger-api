@@ -1,5 +1,6 @@
 package be.nabu.libs.swagger.api;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import be.nabu.libs.artifacts.api.Artifact;
@@ -32,4 +33,9 @@ public interface SwaggerDefinition extends Artifact {
 	public List<SwaggerSecurityDefinition> getSecurityDefinitions();
 	// get the global security definitions
 	public List<SwaggerSecuritySetting> getGlobalSecurity();
+	
+	// a list of the global tag documentation
+	public default List<SwaggerTag> getTags() {
+		return new ArrayList<SwaggerTag>();
+	}
 }
